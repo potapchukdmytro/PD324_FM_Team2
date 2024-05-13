@@ -1,0 +1,3 @@
+PD324_Team2.mssql.somee.com
+sweetdie_SQLLogin_1
+rsxbyswded
