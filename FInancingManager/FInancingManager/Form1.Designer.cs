@@ -28,18 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            buttonSignUp = new Button();
             SuspendLayout();
+            // 
+            // buttonSignUp
+            // 
+            buttonSignUp.Location = new Point(366, 191);
+            buttonSignUp.Name = "buttonSignUp";
+            buttonSignUp.Size = new Size(94, 29);
+            buttonSignUp.TabIndex = 0;
+            buttonSignUp.Text = "Реєстрація";
+            buttonSignUp.UseVisualStyleBackColor = true;
+            buttonSignUp.Click += buttonSignUp_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(829, 470);
+            Controls.Add(buttonSignUp);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button buttonSignUp;
     }
 }
