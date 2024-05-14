@@ -29,5 +29,12 @@ namespace FInancingManager
             SignUp signUpForm = new SignUp(userService);
             signUpForm.ShowDialog();
         }
+
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm(userService);
+            loginForm.ShowDialog();
+        }
+
     }
 }
