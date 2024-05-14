@@ -29,24 +29,38 @@
         private void InitializeComponent()
         {
             buttonSignUp = new Button();
+            LoginButton = new Button();
             SuspendLayout();
             // 
             // buttonSignUp
             // 
-            buttonSignUp.Location = new Point(366, 191);
+            buttonSignUp.Location = new Point(296, 228);
+            buttonSignUp.Margin = new Padding(3, 2, 3, 2);
             buttonSignUp.Name = "buttonSignUp";
-            buttonSignUp.Size = new Size(94, 29);
+            buttonSignUp.Size = new Size(82, 22);
             buttonSignUp.TabIndex = 0;
             buttonSignUp.Text = "Реєстрація";
             buttonSignUp.UseVisualStyleBackColor = true;
             buttonSignUp.Click += buttonSignUp_Click;
             // 
+            // LoginButton
+            // 
+            LoginButton.Location = new Point(159, 228);
+            LoginButton.Name = "LoginButton";
+            LoginButton.Size = new Size(85, 23);
+            LoginButton.TabIndex = 5;
+            LoginButton.Text = "Увійти";
+            LoginButton.UseVisualStyleBackColor = true;
+            LoginButton.Click += LoginButton_Click;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(829, 470);
+            ClientSize = new Size(557, 337);
+            Controls.Add(LoginButton);
             Controls.Add(buttonSignUp);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -55,5 +69,6 @@
         #endregion
 
         private Button buttonSignUp;
+        private Button LoginButton;
     }
 }
