@@ -15,7 +15,8 @@ namespace FInancingManager.AutoMapper
         {
             // SignUpModel -> UserEntity
             CreateMap<SignUpModel, UserEntity>()
-                .ForMember(dest => dest.Id, opt => opt.Ignore());
+                .ForMember(dest => dest.Id, opt => opt.Ignore())
+                .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.FirstName));
 
             // UserEntity -> UserModel
             CreateMap<UserEntity, UserModel>();
