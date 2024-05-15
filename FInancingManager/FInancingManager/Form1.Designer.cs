@@ -40,10 +40,10 @@
             // 
             // buttonSignUp
             // 
-            buttonSignUp.Location = new Point(662, 60);
+            buttonSignUp.Location = new Point(640, 60);
             buttonSignUp.Margin = new Padding(4, 3, 4, 3);
             buttonSignUp.Name = "buttonSignUp";
-            buttonSignUp.Size = new Size(121, 37);
+            buttonSignUp.Size = new Size(143, 37);
             buttonSignUp.TabIndex = 0;
             buttonSignUp.Text = "Реєстрація";
             buttonSignUp.UseVisualStyleBackColor = true;
@@ -51,10 +51,10 @@
             // 
             // LoginButton
             // 
-            LoginButton.Location = new Point(662, 14);
+            LoginButton.Location = new Point(640, 14);
             LoginButton.Margin = new Padding(4, 5, 4, 5);
             LoginButton.Name = "LoginButton";
-            LoginButton.Size = new Size(121, 38);
+            LoginButton.Size = new Size(143, 38);
             LoginButton.TabIndex = 5;
             LoginButton.Text = "Увійти";
             LoginButton.UseVisualStyleBackColor = true;
@@ -82,36 +82,33 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.Lime;
             button1.Location = new Point(13, 513);
             button1.Margin = new Padding(4, 3, 4, 3);
             button1.Name = "button1";
             button1.Size = new Size(121, 37);
             button1.TabIndex = 8;
             button1.Text = "Додати";
-            button1.UseVisualStyleBackColor = false;
+            button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.BackColor = SystemColors.MenuHighlight;
             button2.Location = new Point(142, 513);
             button2.Margin = new Padding(4, 3, 4, 3);
             button2.Name = "button2";
             button2.Size = new Size(121, 37);
             button2.TabIndex = 9;
             button2.Text = "Змінити";
-            button2.UseVisualStyleBackColor = false;
+            button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            button3.BackColor = Color.Red;
             button3.Location = new Point(271, 513);
             button3.Margin = new Padding(4, 3, 4, 3);
             button3.Name = "button3";
             button3.Size = new Size(121, 37);
             button3.TabIndex = 10;
             button3.Text = "Видалити";
-            button3.UseVisualStyleBackColor = false;
+            button3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
