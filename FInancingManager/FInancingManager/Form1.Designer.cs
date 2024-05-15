@@ -40,10 +40,10 @@
             // 
             // buttonSignUp
             // 
-            buttonSignUp.Location = new Point(530, 48);
-            buttonSignUp.Margin = new Padding(3, 2, 3, 2);
+            buttonSignUp.Location = new Point(640, 60);
+            buttonSignUp.Margin = new Padding(4, 3, 4, 3);
             buttonSignUp.Name = "buttonSignUp";
-            buttonSignUp.Size = new Size(97, 30);
+            buttonSignUp.Size = new Size(143, 37);
             buttonSignUp.TabIndex = 0;
             buttonSignUp.Text = "Реєстрація";
             buttonSignUp.UseVisualStyleBackColor = true;
@@ -51,10 +51,10 @@
             // 
             // LoginButton
             // 
-            LoginButton.Location = new Point(530, 11);
-            LoginButton.Margin = new Padding(3, 4, 3, 4);
+            LoginButton.Location = new Point(640, 14);
+            LoginButton.Margin = new Padding(4, 5, 4, 5);
             LoginButton.Name = "LoginButton";
-            LoginButton.Size = new Size(97, 30);
+            LoginButton.Size = new Size(143, 38);
             LoginButton.TabIndex = 5;
             LoginButton.Text = "Увійти";
             LoginButton.UseVisualStyleBackColor = true;
@@ -68,7 +68,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(495, 392);
+            dataGridView1.Size = new Size(619, 447);
             dataGridView1.TabIndex = 6;
             // 
             // label1
@@ -84,29 +84,32 @@
             // 
             // button1
             // 
-            button1.Location = new Point(12, 445);
+            button1.Location = new Point(13, 513);
+            button1.Margin = new Padding(4, 3, 4, 3);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(121, 37);
             button1.TabIndex = 8;
-            button1.Text = "Add";
+            button1.Text = "Додати";
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(159, 445);
+            button2.Location = new Point(142, 513);
+            button2.Margin = new Padding(4, 3, 4, 3);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(121, 37);
             button2.TabIndex = 9;
-            button2.Text = "Edit";
+            button2.Text = "Змінити";
             button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            button3.Location = new Point(316, 445);
+            button3.Location = new Point(271, 513);
+            button3.Margin = new Padding(4, 3, 4, 3);
             button3.Name = "button3";
-            button3.Size = new Size(94, 29);
+            button3.Size = new Size(121, 37);
             button3.TabIndex = 10;
-            button3.Text = "Delete";
+            button3.Text = "Видалити";
             button3.UseVisualStyleBackColor = true;
             // 
             // Form1
@@ -114,7 +117,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(637, 486);
+            ClientSize = new Size(796, 562);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
