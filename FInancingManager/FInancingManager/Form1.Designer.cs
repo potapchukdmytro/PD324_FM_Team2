@@ -32,6 +32,9 @@
             LoginButton = new Button();
             dataGridView1 = new DataGridView();
             label1 = new Label();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -64,7 +67,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(619, 490);
+            dataGridView1.Size = new Size(619, 447);
             dataGridView1.TabIndex = 6;
             // 
             // label1
@@ -77,12 +80,48 @@
             label1.TabIndex = 7;
             label1.Text = "Ваші доходи";
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Lime;
+            button1.Location = new Point(13, 513);
+            button1.Margin = new Padding(4, 3, 4, 3);
+            button1.Name = "button1";
+            button1.Size = new Size(121, 37);
+            button1.TabIndex = 8;
+            button1.Text = "Додати";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.MenuHighlight;
+            button2.Location = new Point(142, 513);
+            button2.Margin = new Padding(4, 3, 4, 3);
+            button2.Name = "button2";
+            button2.Size = new Size(121, 37);
+            button2.TabIndex = 9;
+            button2.Text = "Змінити";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.Red;
+            button3.Location = new Point(271, 513);
+            button3.Margin = new Padding(4, 3, 4, 3);
+            button3.Name = "button3";
+            button3.Size = new Size(121, 37);
+            button3.TabIndex = 10;
+            button3.Text = "Видалити";
+            button3.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(796, 562);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Controls.Add(LoginButton);
@@ -101,5 +140,8 @@
         private Button LoginButton;
         private DataGridView dataGridView1;
         private Label label1;
+        private Button button1;
+        private Button button2;
+        private Button button3;
     }
 }
