@@ -86,5 +86,47 @@ namespace FInancingManager.Services
 
             return Add(actingUser);
         }
+        public ServiceRepsonse SignIn(LoginModel model)
+        {
+            LoginValidator validator = new LoginValidator();
+            var validatorRes = validator.Validate(model);
+
+            if (!validatorRes.IsValid)
+            {
+                return new ServiceRepsonse
+                {
+                    IsSuccess = false,
+                    Message = validatorRes.Errors[0].ErrorMessage
+                };
+            }
+
+            if (!IsExists(model.Email))
+            {
+                return new ServiceRepsonse
+                {
+                    IsSuccess = false,
+                    Message = "Пошта або пароль вказано не вірно"
+                };
+            }
+
+            var user = GetByLogin(model.Email);
+
+            if (user.Password != model.Password)
+            {
+                return new ServiceRepsonse
+                {
+                    IsSuccess = false,
+                    Message = "Пошта або пароль вказано не вірно"
+                };
+            }
+
+            actingUser = user;
+
+            return new ServiceRepsonse
+            {
+                IsSuccess = true,
+                Message = "Успішний вхід"
+            };
+        }
     }
 }
