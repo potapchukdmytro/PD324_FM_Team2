@@ -21,6 +21,7 @@ namespace FInancingManager.Auth
         {
             InitializeComponent();
             this.userService = userService;
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void SignUp_Load(object sender, EventArgs e)
@@ -57,6 +58,13 @@ namespace FInancingManager.Auth
                 labelError.Text = response.Message;
                 labelError.Visible = true;
             }
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm(userService);
+            loginForm.Show();
+            this.Close();
         }
     }
 }

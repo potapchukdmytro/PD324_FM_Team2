@@ -43,6 +43,8 @@
             buttonSignUp = new Button();
             buttonCancel = new Button();
             labelError = new Label();
+            label7 = new Label();
+            label8 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -51,9 +53,9 @@
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(41, 21);
             label1.Name = "label1";
-            label1.Size = new Size(40, 23);
+            label1.Size = new Size(89, 23);
             label1.TabIndex = 0;
-            label1.Text = "Ім'я";
+            label1.Text = "First name";
             // 
             // label3
             // 
@@ -61,9 +63,9 @@
             label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(41, 189);
             label3.Name = "label3";
-            label3.Size = new Size(52, 23);
+            label3.Size = new Size(92, 23);
             label3.TabIndex = 2;
-            label3.Text = "Логін";
+            label3.Text = "User name";
             // 
             // label4
             // 
@@ -71,9 +73,9 @@
             label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             label4.Location = new Point(41, 133);
             label4.Name = "label4";
-            label4.Size = new Size(62, 23);
+            label4.Size = new Size(51, 23);
             label4.TabIndex = 3;
-            label4.Text = "Пошта";
+            label4.Text = "Email";
             // 
             // label5
             // 
@@ -81,9 +83,9 @@
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             label5.Location = new Point(41, 77);
             label5.Name = "label5";
-            label5.Size = new Size(86, 23);
+            label5.Size = new Size(88, 23);
             label5.TabIndex = 4;
-            label5.Text = "Прізвище";
+            label5.Text = "Last name";
             // 
             // label6
             // 
@@ -91,9 +93,9 @@
             label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             label6.Location = new Point(41, 245);
             label6.Name = "label6";
-            label6.Size = new Size(69, 23);
+            label6.Size = new Size(80, 23);
             label6.TabIndex = 5;
-            label6.Text = "Пароль";
+            label6.Text = "Password";
             // 
             // label2
             // 
@@ -101,9 +103,9 @@
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(41, 301);
             label2.Name = "label2";
-            label2.Size = new Size(157, 23);
+            label2.Size = new Size(139, 23);
             label2.TabIndex = 6;
-            label2.Text = "Повторити пароль";
+            label2.Text = "Repeat password";
             // 
             // textBoxName
             // 
@@ -181,11 +183,35 @@
             labelError.Text = "Виводить помилки";
             labelError.Visible = false;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(77, 453);
+            label7.Name = "label7";
+            label7.Size = new Size(111, 23);
+            label7.TabIndex = 16;
+            label7.Text = "Уже є акаунт";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.ForeColor = SystemColors.HotTrack;
+            label8.Location = new Point(194, 453);
+            label8.Name = "label8";
+            label8.Size = new Size(70, 23);
+            label8.TabIndex = 17;
+            label8.Text = "увійдіть";
+            label8.Click += label8_Click;
+            // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(373, 450);
+            ClientSize = new Size(373, 504);
+            Controls.Add(label8);
+            Controls.Add(label7);
             Controls.Add(labelError);
             Controls.Add(buttonCancel);
             Controls.Add(buttonSignUp);
@@ -225,5 +251,7 @@
         private Button buttonSignUp;
         private Button buttonCancel;
         private Label labelError;
+        private Label label7;
+        private Label label8;
     }
 }
