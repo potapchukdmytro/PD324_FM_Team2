@@ -18,6 +18,7 @@ namespace FInancingManager.Auth
         {
             InitializeComponent();
             this.userService = userService;
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void LoginButton_Click(object sender, EventArgs e)
@@ -29,7 +30,7 @@ namespace FInancingManager.Auth
 
             if (user != null && user.Password == password)
             {
-                //перехід на головну сторінку
+                this.Close();
             }
             else
             {
@@ -40,6 +41,13 @@ namespace FInancingManager.Auth
         private void CloseButton_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            SignUp singUp = new SignUp(userService);
+            singUp.Show();
+            this.Close();
         }
     }
 }
