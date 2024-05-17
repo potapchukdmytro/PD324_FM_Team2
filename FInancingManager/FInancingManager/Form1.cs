@@ -36,5 +36,16 @@ namespace FInancingManager
             loginForm.ShowDialog();
         }
 
+        private void AddForm_Click(object sender, EventArgs e)
+        {
+            AddForm AddForm= new AddForm();
+            AddForm.ShowDialog();
+        }
+
+        private void EditForm_Click(object sender, EventArgs e)
+        {
+            EditForm EditForm = new EditForm();
+            EditForm.ShowDialog();
+        }
     }
 }
