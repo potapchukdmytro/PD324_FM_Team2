@@ -28,210 +28,217 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label2 = new Label();
-            textBoxName = new TextBox();
-            textBoxLastName = new TextBox();
-            textBoxEmail = new TextBox();
-            textBoxLogin = new TextBox();
-            textBoxPassword = new TextBox();
-            textBoxConfirmPassword = new TextBox();
-            buttonSignUp = new Button();
-            buttonCancel = new Button();
-            labelError = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.textBoxLastName = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.textBoxLogin = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.textBoxConfirmPassword = new System.Windows.Forms.TextBox();
+            this.buttonSignUp = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.labelError = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(41, 21);
-            label1.Name = "label1";
-            label1.Size = new Size(89, 23);
-            label1.TabIndex = 0;
-            label1.Text = "First name";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(36, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "First name";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(41, 189);
-            label3.Name = "label3";
-            label3.Size = new Size(92, 23);
-            label3.TabIndex = 2;
-            label3.Text = "User name";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(36, 142);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 19);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "User name";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(41, 133);
-            label4.Name = "label4";
-            label4.Size = new Size(51, 23);
-            label4.TabIndex = 3;
-            label4.Text = "Email";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(36, 100);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 19);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Email";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(41, 77);
-            label5.Name = "label5";
-            label5.Size = new Size(88, 23);
-            label5.TabIndex = 4;
-            label5.Text = "Last name";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(36, 58);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(72, 19);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Last name";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(41, 245);
-            label6.Name = "label6";
-            label6.Size = new Size(80, 23);
-            label6.TabIndex = 5;
-            label6.Text = "Password";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(36, 184);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(67, 19);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Password";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(41, 301);
-            label2.Name = "label2";
-            label2.Size = new Size(139, 23);
-            label2.TabIndex = 6;
-            label2.Text = "Repeat password";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(36, 226);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(113, 19);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Repeat password";
             // 
             // textBoxName
             // 
-            textBoxName.Location = new Point(41, 47);
-            textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(236, 27);
-            textBoxName.TabIndex = 7;
+            this.textBoxName.Location = new System.Drawing.Point(36, 35);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(207, 23);
+            this.textBoxName.TabIndex = 7;
             // 
             // textBoxLastName
             // 
-            textBoxLastName.Location = new Point(41, 103);
-            textBoxLastName.Name = "textBoxLastName";
-            textBoxLastName.Size = new Size(236, 27);
-            textBoxLastName.TabIndex = 8;
+            this.textBoxLastName.Location = new System.Drawing.Point(36, 77);
+            this.textBoxLastName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxLastName.Name = "textBoxLastName";
+            this.textBoxLastName.Size = new System.Drawing.Size(207, 23);
+            this.textBoxLastName.TabIndex = 8;
             // 
             // textBoxEmail
             // 
-            textBoxEmail.Location = new Point(41, 159);
-            textBoxEmail.Name = "textBoxEmail";
-            textBoxEmail.Size = new Size(236, 27);
-            textBoxEmail.TabIndex = 9;
+            this.textBoxEmail.Location = new System.Drawing.Point(36, 119);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(207, 23);
+            this.textBoxEmail.TabIndex = 9;
             // 
             // textBoxLogin
             // 
-            textBoxLogin.Location = new Point(41, 215);
-            textBoxLogin.Name = "textBoxLogin";
-            textBoxLogin.Size = new Size(236, 27);
-            textBoxLogin.TabIndex = 10;
+            this.textBoxLogin.Location = new System.Drawing.Point(36, 161);
+            this.textBoxLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxLogin.Name = "textBoxLogin";
+            this.textBoxLogin.Size = new System.Drawing.Size(207, 23);
+            this.textBoxLogin.TabIndex = 10;
             // 
             // textBoxPassword
             // 
-            textBoxPassword.Location = new Point(41, 271);
-            textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.Size = new Size(236, 27);
-            textBoxPassword.TabIndex = 11;
+            this.textBoxPassword.Location = new System.Drawing.Point(36, 203);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(207, 23);
+            this.textBoxPassword.TabIndex = 11;
             // 
             // textBoxConfirmPassword
             // 
-            textBoxConfirmPassword.Location = new Point(41, 327);
-            textBoxConfirmPassword.Name = "textBoxConfirmPassword";
-            textBoxConfirmPassword.Size = new Size(236, 27);
-            textBoxConfirmPassword.TabIndex = 12;
+            this.textBoxConfirmPassword.Location = new System.Drawing.Point(36, 245);
+            this.textBoxConfirmPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
+            this.textBoxConfirmPassword.Size = new System.Drawing.Size(207, 23);
+            this.textBoxConfirmPassword.TabIndex = 12;
             // 
             // buttonSignUp
             // 
-            buttonSignUp.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonSignUp.Location = new Point(41, 402);
-            buttonSignUp.Name = "buttonSignUp";
-            buttonSignUp.Size = new Size(102, 36);
-            buttonSignUp.TabIndex = 13;
-            buttonSignUp.Text = "Ок";
-            buttonSignUp.UseVisualStyleBackColor = true;
-            buttonSignUp.Click += buttonSignUp_Click;
+            this.buttonSignUp.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonSignUp.Location = new System.Drawing.Point(36, 302);
+            this.buttonSignUp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonSignUp.Name = "buttonSignUp";
+            this.buttonSignUp.Size = new System.Drawing.Size(89, 27);
+            this.buttonSignUp.TabIndex = 13;
+            this.buttonSignUp.Text = "Ок";
+            this.buttonSignUp.UseVisualStyleBackColor = true;
             // 
             // buttonCancel
             // 
-            buttonCancel.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonCancel.Location = new Point(175, 402);
-            buttonCancel.Name = "buttonCancel";
-            buttonCancel.Size = new Size(102, 36);
-            buttonCancel.TabIndex = 14;
-            buttonCancel.Text = "Скасувати";
-            buttonCancel.UseVisualStyleBackColor = true;
-            buttonCancel.Click += buttonCancel_Click;
+            this.buttonCancel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonCancel.Location = new System.Drawing.Point(153, 302);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(89, 27);
+            this.buttonCancel.TabIndex = 14;
+            this.buttonCancel.Text = "Скасувати";
+            this.buttonCancel.UseVisualStyleBackColor = true;
             // 
             // labelError
             // 
-            labelError.AutoSize = true;
-            labelError.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            labelError.ForeColor = Color.Red;
-            labelError.Location = new Point(41, 368);
-            labelError.Name = "labelError";
-            labelError.Size = new Size(141, 20);
-            labelError.TabIndex = 15;
-            labelError.Text = "Виводить помилки";
-            labelError.Visible = false;
+            this.labelError.AutoSize = true;
+            this.labelError.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelError.ForeColor = System.Drawing.Color.Red;
+            this.labelError.Location = new System.Drawing.Point(36, 276);
+            this.labelError.Name = "labelError";
+            this.labelError.Size = new System.Drawing.Size(111, 15);
+            this.labelError.TabIndex = 15;
+            this.labelError.Text = "Виводить помилки";
+            this.labelError.Visible = false;
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(77, 453);
-            label7.Name = "label7";
-            label7.Size = new Size(111, 23);
-            label7.TabIndex = 16;
-            label7.Text = "Уже є акаунт";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(67, 340);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 19);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Уже є акаунт";
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.ForeColor = SystemColors.HotTrack;
-            label8.Location = new Point(194, 453);
-            label8.Name = "label8";
-            label8.Size = new Size(70, 23);
-            label8.TabIndex = 17;
-            label8.Text = "увійдіть";
-            label8.Click += label8_Click;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label8.Location = new System.Drawing.Point(170, 340);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 19);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "увійдіть";
             // 
             // SignUp
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(373, 504);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(labelError);
-            Controls.Add(buttonCancel);
-            Controls.Add(buttonSignUp);
-            Controls.Add(textBoxConfirmPassword);
-            Controls.Add(textBoxPassword);
-            Controls.Add(textBoxLogin);
-            Controls.Add(textBoxEmail);
-            Controls.Add(textBoxLastName);
-            Controls.Add(textBoxName);
-            Controls.Add(label2);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label1);
-            Name = "SignUp";
-            Text = "SignUp";
-            Load += SignUp_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(289, 378);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.labelError);
+            this.Controls.Add(this.buttonCancel);
+            this.Controls.Add(this.buttonSignUp);
+            this.Controls.Add(this.textBoxConfirmPassword);
+            this.Controls.Add(this.textBoxPassword);
+            this.Controls.Add(this.textBoxLogin);
+            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.textBoxLastName);
+            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "SignUp";
+            this.Text = "SignUp";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
