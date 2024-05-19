@@ -10,9 +10,12 @@ namespace FInancingManager
         private readonly UserService userService;
         private readonly Mapper mapper;
         public readonly AppDbContext context;
+        private readonly CostRepository costRepository;
+
         public Form1()
         {
             context = new AppDbContext();
+            costRepository = new CostRepository(context); 
 
             var config = new MapperConfiguration(cfg =>
             {
@@ -24,6 +27,7 @@ namespace FInancingManager
             InitializeComponent();
         }
 
+
         private void buttonSignUp_Click(object sender, EventArgs e)
         {
             SignUp signUpForm = new SignUp(userService);
@@ -33,8 +37,12 @@ namespace FInancingManager
         private void LoginButton_Click(object sender, EventArgs e)
         {
             LoginForm loginForm = new LoginForm(userService);
-            loginForm.ShowDialog();
+            if (loginForm.ShowDialog() == DialogResult.OK)
+            {
+                LoadCosts(); 
+            }
         }
+
 
         private void AddForm_Click(object sender, EventArgs e)
         {
@@ -47,5 +55,12 @@ namespace FInancingManager
             EditForm EditForm = new EditForm();
             EditForm.ShowDialog();
         }
+
+        private void LoadCosts()
+        {
+            var costs = costRepository.GetAllCosts();
+            dataGridView.DataSource = costs.ToList();
+        }
+
     }
 }
